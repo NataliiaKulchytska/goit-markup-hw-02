@@ -1,0 +1,50 @@
+:root {
+  --basic-title-color: {
+    color: #212121;
+  }
+  --basic-text-color: {
+    *color: #757575;
+  }
+  --accent-white-color: {
+    color: #ffffff;
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #e5e5e5;
+  letter-spacing: 0.03em;
+}
+.button {
+  font-family: inherit;
+}
+/* color: #2196F3; синий для лого   background: #F5F4FA; для фона наша команда*/
+/*color: #212121;  черный заголовки*/
+/*color: #757575; серый для номера и ссылок в хедере и р*/
+/* color:#FFFFFF; белый для н1* и кнопки/
+/*  color: rgba(255, 255, 255, 0.6); почта и телефон в ввнизу*/
+/* Логотип*/
+.logo {
+  font-family: 'Raleway', sans-serif;
+}
+.logo-blue {
+  color: #2196f3;
+}
+
+.logo-black {
+  color: #212121;
+}
+.logo-white {
+  color: #ffffff;
+}
+/* Навигация */
+ul .navigator {
+  color: var(--basic-title-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+}
+ul .navigator:hover,
+ul .navigator:focus {
+  color: #2196f3;
+}
