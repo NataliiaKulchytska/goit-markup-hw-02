@@ -3,7 +3,7 @@
     color: #212121;
   }
   --basic-text-color: {
-    *color: #757575;
+    color: #757575;
   }
   --accent-white-color: {
     color: #ffffff;
@@ -14,9 +14,7 @@ body {
   background: #e5e5e5;
   letter-spacing: 0.03em;
 }
-.button {
-  font-family: inherit;
-}
+
 /* color: #2196F3; синий для лого   background: #F5F4FA; для фона наша команда*/
 /*color: #212121;  черный заголовки*/
 /*color: #757575; серый для номера и ссылок в хедере и р*/
@@ -25,6 +23,7 @@ body {
 /* Логотип*/
 .logo {
   font-family: 'Raleway', sans-serif;
+  text-decoration: none; /* убирает подчеркивание*/
 }
 .logo-blue {
   color: #2196f3;
@@ -37,14 +36,26 @@ body {
   color: #ffffff;
 }
 /* Навигация */
-ul .navigator {
+.navigator .link {
   color: var(--basic-title-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
 }
-ul .navigator:hover,
-ul .navigator:focus {
+.navigator .link:hover,
+.navigator .link:focus {
   color: #2196f3;
 }
+/*Контакты*/
+.contact .link {
+  color: var(--basic-text-color);
+}
+.contact .link:hover,
+.contact .link:focus {
+  color: #2196f3;
+}
+/*
+.button {
+  font-family: inherit;
+}*/
