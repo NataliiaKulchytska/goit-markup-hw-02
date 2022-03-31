@@ -2,6 +2,7 @@
   --basic-title-color: #212121;
   --base-text-color: #757575;
   --white-color: #ffffff;
+  --blue-color: #2196f3;
 }
 /* Цвет фона основной но на нем невидно белые элементы
 background: #ffffff;*/
@@ -13,41 +14,47 @@ body {
 }
 
 /* Логотип*/
-.logo {
+.logo,
+.logo-footer {
   font-family: 'Raleway', sans-serif;
-  text-decoration: none; /* убирает подчеркивание*/
   color: #000000;
+  text-decoration: none; 
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19px;
 }
+
 .logo-blue {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 
 /* Навигация */
 .navigator {
   text-decoration: none;
 }
-.navigator .link {
+.navigator .link,
+.contact-link {
   color: var(--basic-title-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
+  letter-spacing: 0.02em;
 }
 .navigator .link:hover,
-.navigator .link:focus,
-.navigator .link:active {
-  color: #2196f3;
+.navigator .link:focus{
+  color: var(--blue-color);
 }
 
 /*Контакты*/
 
 .contact-link {
   color: var(--base-text-color);
-  text-decoration: none;
+ 
 }
 .contact-link:hover,
 .contact-link:focus {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 /*Герой*/
 
@@ -63,21 +70,23 @@ body {
 .hero-button {
   color: var(--white-color);
   font-family: inherit;
-  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88px;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
+
 .hero-button.hero-button:hover,
 .hero-button.hero-button:focus {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 /* Проекты*/
 .project-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14px;
+  text-transform: uppercase;
 }
 .project-text {
   color: var(--base-text-color);
@@ -106,34 +115,36 @@ body {
 .logo-footer {
   color: var(--white-color);
   font-family: 'Raleway', sans-serif;
-  text-decoration: none;
 }
 /*Адрес*/
 
-.address-map {
+.address-map,
+.address-link {
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.71px;
   text-decoration: none;
 }
+.address-map.address-map:hover,
+.address-map.address-map:focus{
+  color: var(--blue-color);
+}
 .address-link {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71px;
-  text-decoration: none;
+ 
 }
 .address-link.address-link:hover,
 .address-link.address-link:focus {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 /*Портфолио*/
 .portfolio-button {
   color: var(--basic-title-color);
   font-family: inherit;
-  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63px;
+  cursor: pointer;
 }
 .portfolio-button.portfolio-button:hover,
 .portfolio-button.portfolio-button:focus {
