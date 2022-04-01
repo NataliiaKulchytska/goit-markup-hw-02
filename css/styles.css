@@ -4,13 +4,12 @@
   --white-color: #ffffff;
   --blue-color: #2196f3;
 }
-/* Цвет фона основной но на нем невидно белые элементы
-background: #ffffff;*/
+
 body {
   color: var(--basic-title-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
-  background: #e5e5e5;
+  background: #ffffff;
 }
 
 /* Логотип*/
@@ -31,6 +30,7 @@ body {
 /* Навигация */
 .navigator {
   text-decoration: none;
+  list-style: none;
 }
 .navigator .link,
 .contact-link {
@@ -40,7 +40,9 @@ body {
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
+  
 }
+
 .navigator .link:hover,
 .navigator .link:focus{
   color: var(--blue-color);
@@ -57,7 +59,9 @@ body {
   color: var(--blue-color);
 }
 /*Герой*/
-
+.hero{
+  background-color: #2F303A;
+}
 .hero-title {
   color: var(--white-color);
   letter-spacing: 0.06em;
@@ -101,6 +105,9 @@ body {
   line-height: 1.17px;
 }
 /*Команда*/
+.command {
+  background-color: #F5F4FA;
+}
 .command-heading {
   font-weight: 500;
   font-size: 16px;
@@ -112,10 +119,13 @@ body {
   line-height: 1.19px;
 }
 /*Footer*/
+.footer {
+  background-color: #2F303A;
+}
 .logo-footer {
   color: var(--white-color);
   font-family: 'Raleway', sans-serif;
-}
+  }
 /*Адрес*/
 
 .address-map,
