@@ -28,11 +28,11 @@ body {
 }
 
 /* Навигация */
-.navigator {
+.navigator-list {
   text-decoration: none;
   list-style: none;
 }
-.navigator .link,
+.navigator-list .link,
 .contact-link {
   color: var(--basic-title-color);
   text-decoration: none;
@@ -43,13 +43,15 @@ body {
   
 }
 
-.navigator .link:hover,
-.navigator .link:focus{
+.navigator-list .link:hover,
+.navigator-list .link:focus{
   color: var(--blue-color);
 }
 
 /*Контакты*/
-
+.contact-list{
+  list-style: none;
+}
 .contact-link {
   color: var(--base-text-color);
  
@@ -59,33 +61,16 @@ body {
   color: var(--blue-color);
 }
 /*Герой*/
-.hero{
-  background-color: #2F303A;
-}
-.hero-title {
-  color: var(--white-color);
-  letter-spacing: 0.06em;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36px;
-  text-transform: uppercase;
-}
 
-.hero-button {
-  color: var(--white-color);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88px;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-}
 
-.hero-button.hero-button:hover,
+/*.hero-button.hero-button:hover,
 .hero-button.hero-button:focus {
   color: var(--blue-color);
-}
+}*/
 /* Проекты*/
+.project-list{
+  list-style: none;
+}
 .project-title {
   font-weight: 700;
   font-size: 14px;
@@ -98,25 +83,41 @@ body {
   line-height: 1.71px;
 }
 /* Карточки проектов*/
-.project-cards-title,
+
+.project-cards-list{
+  list-style: none;
+  }
+.project-cards-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17px;
+  text-align: center;
+} 
+
+/*Команда*/
+.command {
+  background-color: #F5F4FA;
+}
 .command-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17px;
+  text-align: center;
 }
-/*Команда*/
-.command {
-  background-color: #F5F4FA;
+.command-list{
+  list-style: none;
 }
 .command-heading {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19px;
+  text-align: center;
 }
 .command-text {
   color: var(--base-text-color);
   font-size: 16px;
   line-height: 1.19px;
+  text-align: center;
 }
 /*Footer*/
 .footer {
@@ -127,7 +128,9 @@ body {
   font-family: 'Raleway', sans-serif;
   }
 /*Адрес*/
-
+.footer-list{
+  list-style: none;
+}
 .address-map,
 .address-link {
   color: var(--white-color);
@@ -135,30 +138,40 @@ body {
   line-height: 1.71px;
   text-decoration: none;
 }
-.address-map.address-map:hover,
-.address-map.address-map:focus{
-  color: var(--blue-color);
-}
+
 .address-link {
   color: rgba(255, 255, 255, 0.6);
- 
-}
-.address-link.address-link:hover,
-.address-link.address-link:focus {
-  color: var(--blue-color);
 }
 /*Портфолио*/
-.portfolio-button {
-  color: var(--basic-title-color);
+
+.portfolio-button-list{
+  list-style: none; 
+}
+.portfolio-button-one {
+  color: var(--white-color);
+  background-color: var(--blue-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63px;
-  cursor: pointer;
 }
+.portfolio-button-list>.portfolio-button {
+  color: var(--basic-title-color);
+  background-color: #F5F4FA;
+  line-height: 1.63px;
+ }
+.portfolio-button{
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+ }
+
 .portfolio-button.portfolio-button:hover,
 .portfolio-button.portfolio-button:focus {
   color: var(--white-color);
+}
+.portfolio-project-list{
+  list-style: none;
 }
 .portfolio-project-title {
   font-weight: 700;
