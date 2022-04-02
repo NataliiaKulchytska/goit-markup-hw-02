@@ -64,12 +64,14 @@ body {
 .hero{
   color: var(--white-color);
   background: #2F303A;
-  font-weight: 900;
-  font-size: 44px;
   line-height: 1.36;    
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.hero-title{
+  font-weight: 900;
+  font-size: 44px;
 }
 .hero-button{
   font-family: inherit;
@@ -83,7 +85,7 @@ body {
   }
 .hero-button:hover,
 .hero-button:hover{
-  color: var(--basic-title-color);
+  background-color: #188CE8;
 }
 
 /* Проекты*/
@@ -150,6 +152,7 @@ body {
 /*Адрес*/
 .footer-list{
   list-style: none;
+  font-style: normal;
 }
 .address-map,
 .address-link {
@@ -191,13 +194,18 @@ body {
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--white-color);
+  background-color: var(--blue-color);
 }
 
 /* Проекты портфолио*/
 .portfolio-project-list{
   list-style: none;
 }
-.portfolio-project-title {
+.portfolio-project-link{
+  text-decoration: none;
+}
+.portfolio-project-link .portfolio-project-title {
+  color: var(--basic-title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
